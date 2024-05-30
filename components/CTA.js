@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ChevronRight, MoveRight } from "lucide-react";
+import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function CTA() {
   return (
@@ -17,9 +20,11 @@ export default function CTA() {
         Empower yourself with the tools to identify and combat misinformation.
         Sign up today and start verifying news articles with ease.
       </p>
-      <Button variant="outline" size="lg" className="rounded-full">
-        Get Started
-      </Button>
+      <RegisterLink>
+        <Button variant="outline" size="lg" className="rounded-full">
+          Get Started
+        </Button>
+      </RegisterLink>
     </section>
   );
 }

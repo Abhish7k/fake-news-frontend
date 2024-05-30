@@ -87,6 +87,7 @@ const Demo = () => {
             <div>
               <h1 className="mt-4 font-bold text-gray-600 text-3xl">
                 Result: <span className="blue_gradient">{result}</span>
+                <p className="h-2 bg-indigo-400 w-full rounded-full -rotate-2"></p>
               </h1>
             </div>
           )}
